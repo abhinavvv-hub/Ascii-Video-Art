@@ -28,7 +28,7 @@ def main():
         print(f"Error: Could not open source {source}")
         sys.exit(1)
     cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
-    frameDelay = 1.0 / (cap.get(cv2.CAP_PROP_FPS) or 60.0)
+    frameDelay = 1.0 / (cap.get(cv2.CAP_PROP_FPS) or 30.0)
     sys.stdout.write("\033[2J\033[?25l")
     sys.stdout.flush()
     try:
